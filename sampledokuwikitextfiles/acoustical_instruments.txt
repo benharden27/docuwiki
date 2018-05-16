@@ -1,0 +1,268 @@
+====== ACOUSTICAL INSTRUMENTS ======
+
+===== ACOUSTIC DOPPLER CURRENT PROFILER (ADCP) =====
+
+               
+{{:acoustic2.jpg?200|}}    {{:acoustic3.jpg?250|}}
+
+==== Introduction: ====
+
+
+The Ocean Surveryor 75 Acoustic Doppler Current Profiler (ADCP), made by RD Instruments, sends out a 75 Khz sound signal and measures the Doppler shift and return time of the signal reflecting from particles in the water (plankton and sediment) to calculate the net current movement. The system components are a transducer mounted in the hull of the boat (described in transducer section below), an electronic chassis (white box in computer cabinet), a computer in the electronic cabinet, and a Gyro Compass and Motion Reference Units (MRU) (described in other sections). The chassis is the interface between the computer, transducers and MRU. The system requires little maintenance other than keeping the computers and transducer windows clean. 
+
+==== Operation: ====
+ 
+
+See SEA Computer Manual [[ADCP]]
+
+==== Tricks of the Trade: ====
+ N/A
+==== Maintenance: ====
+ 
+
+**Use:**
+N/A	
+
+**Weekly:**
+ N/A
+
+**Bi-weekly:**
+ N/A
+
+**Turnarounds:** 
+    *Run Error-checking:  To access these tools go to My Computer, Right click on Local Disk (C:), select Properties then click on the Tools tab. Under Error-Checking click on Check Now. This will open up the Check Local Disk (C:) window. Select Automatically fix file system errors and Scan for and attempt recovery of bad sectors. Click Start and wait till Error-Checking finished.\\ Disk Defragment: Run Defragmenter which is located just below Error-Checking in the Property, Tools window. Delete unnecessary files and empty the recycle bin before defragmenting.\\ ADCP diagnostics:  To run diagnostics follow the directions that are with ADCP instructions. 
+
+**Yards:** 
+  *Clean the acoustic windows for ADCP.  This should only be done after consultation with the Captain. Can it be done while the ship is hauled out (if it is to be hauled).  If not, can it be done safely at the berth?  If so, remember to only use plastic scrapers to avoid damaging the polycarbonate acoustic windows.  Carefully remove barnacles and other growth.
+
+  *The inside of the transducer bays should probably be inspected for corrosion of the transducers and wires and cleaned each time the boats are hauled.  Drain the freshwater and check the neoprene lining to make sure it is staying well-attached
+
+  *If the header tank has significant buildup of rust, drain and remove header tank and clean by soaking in a solution of Calcium Lime Rust Remover (available from local hardware store).  
+
+==== Software: ====
+  
+
+VMDAS and WinADCP
+
+==== Specialty Parts: ====
+Fuses:
+
+RCA 6600 Amplifier: 1A 250V
+==== Manuals: ====
+ 
+
+SEA Computer Manual
+Ocean Surveyor Users Guide
+VmDas Users Guide PN 95A-6015-00 March 2001
+WinADCP User Guide Apr03
+
+
+
+
+ 
+
+===== CHIRP SUB-BOTTOM PROFILER =====
+
+    
+{{:acoustic4.jpg?200|}}  {{:acoustic5.jpg?200|}}
+
+==== Introduction: ====
+
+The Knudsen Chirp 3260 Acoustic Profiling System is a fully integrated dual frequency sonar system. We use only one of the two channels, the 3.5KHz channel and the other is available for a 12 KHz addition or as a backup if we experience a failure of the first channel.  The system uses advanced Chirp technology to produce high resolution sub-bottom profiles of both the shallow and deep sub-bottom layers. The chirp computers are housed within the sealed electrical cabinets. 
+
+==== Operation: ====
+ 
+
+See SEA Computer Manual
+
+==== Tricks of the Trade: ====
+N/A
+
+==== Maintenance: ====
+ 
+
+**Use:**
+N/A
+
+**Weekly:** 	Clean the fan vents on both the Chirp computer and the 3260 processor.
+
+**Bi-weekly:**
+N/A
+
+**Turnarounds:**
+  *Run ScanDisk:  To run the ScanDisk utility go to Start> Programs> Accessories> System Tools. For ScanDisk select Thorough and Automatically fix errors.  Disk Defragment: To run the Disk Defragmenter utility go to Start> Programs> Accessories> System Tools. For disk defragmenter select the C: drive and click start.
+
+  *Clean Cooling Fan Filters: The only other maintenance is to clean the filters on the cooling fans. The processor and the transceiver each have one filter on the front panel and two filters on the rear panel. To access the filters on the front panels, first remove the retention screws that hold the plates, and then remove the plates and the filters. To access the filters on the rear panels, first remove the snap-in retention plates, and then remove the filters. Clean or replace the filters as required.
+
+**Yards:** 
+
+  *Clean the acoustic windows for CHIRP.  This should only be done after consultation with the Captain. Can it be done while the ship is hauled out (if it is to be hauled).  If not, can it be done safely at the berth?  If so, remember to only use plastic scrapers to avoid damaging the polycarbonate acoustic windows.  Carefully remove barnacles and other growth.
+
+  *The inside of the transducer bays should probably be inspected for corrosion of the transducers and wires and cleaned each time the boats are hauled.  Drain the freshwater and check the neoprene lining to make sure it is staying well-attached
+
+  *If the header tank has significant buildup of rust, drain and remove header tank and clean by soaking in a solution of Calcium Lime Rust Remover (available from local hardware store).  
+
+==== Software: ====
+
+
+SounderSuite USB\\
+*Echo Control Client\\
+*Echo Control Server\\
+*Post Survey
+
+==== Specialty Parts: ====
+N/A
+
+==== Manuals: ====
+ 
+
+SEA Computer Manual
+SounderSuite USB User Manual
+	
+
+
+
+
+
+
+
+===== TRANSDUCERS =====
+
+   
+CHIRP {{:acoustic1.jpg|}}					ADCP {{:acoustic6.jpg|}}
+
+==== Introduction: ====
+
+The transducers send and receive the acoustical instruments sound signals and convert them to an electrical signal sent to the computers in the lab. The transducers are located near the keel and are housed in fresh water with 10% propylene glycol filled bays that are covered by a polycarbonate window. The transducer bays must be filled with water to ensure that pressure is equalized on either side of the transducers. The bays are fed from header tanks in the lab and the ball valves to the bays should always be OPEN. 
+
+CC: The transducers are located in dry stores with the one for the Chirp on the starboard side at the bottom of the ladder and the ADCP one located on the port side.  Two Chirp cables service the 8 TR-109 transducers (Ocean Data Equipment Corp) in a 2 x 4 array and come out of the transducer bay, run up the starboard bulkhead of dry stores and go into a small junction box on the overhead over the transducer. From this box a single wire leads from the junction box, along the overhead and up through the cable conduit in the salon next to the hutch to the port forward side of the lab. From here, the cable is wrapped with copper shielding and electrical tape, runs up the port lab bulkhead, across to the RCA 6600 amp under the forward end of the electronics cabinet. 
+
+The ADCP cable runs from the single RDI 75kHz transducer up the port side of dry stores through the same cable conduit and to the lab. In the lab, the cable is wrapped with copper shielding and electrical tape. A green grounding wire links the copper shielding with the ADCP chassis. Both transducer bays are flooded with fresh water supplied by a header tank located in the port forward side of the lab. 
+
+RCS: Three cables service the 9 TR-109 transducers (Ocean Data Equipment Corp) in a 3 x 3 array and lead from the transducers in the foremost bay of the forward machinery room to a junction box mounted on the forward bulkhead of the forward machinery space. From there a conduit takes the cables to small junction box in the dry lab.  From there, the signal goes to the RCA 6600 Amplifier, then on to the Chirp topside unit. The bays are flooded with fresh water going up to a header tank in the lab next to the RCA 6600 Amp (below the dissecting scope in the dry lab). Down in the forward machinery space the pipe from this header tank splits with one line going to the Chirp transducer bay and one to the ADCP transducer bay.
+
+The ADCP cable runs from the single RDI 75kHz transducer located centerline in the aft part of the forward machinery space, up the port side and forward to Frame 26. From there the cabling runs up the frame and behind the paneling in the forward bulkhead of the main salon where it bundles with the Chirp cable in the overhead.  From there they both run through the same conduit into the lab just below the dissecting microscope.  Once in the lab, the cable runs forward along the bulkhead and into the computer cabinet. A green grounding wire links the copper shielding with the ADCP chassis. Both transducer bays are flooded with fresh water supplied by a header tank located in the port aft side of the lab beneath the dissecting scope. 
+
+==== Operation: ====
+ 
+
+No user operation required.  All operations controlled by Chirp or ADCP.  See SEA Computer Manual.
+
+==== Tricks of the Trade: ====
+N/A
+
+==== Maintenance: ====
+ 
+
+**Use:**
+N/A
+
+**Weekly:**  Ensure that the header tank is filled with 10% propylene glycol mixed with tap water to a visible level.
+
+**Bi-weekly:** 
+N/A
+
+**Turnarounds:** If possible, inspect the acoustical windows for biological growth and 	carefully scrape clean with a plastic scraper.
+
+**Yards:** 	If the ship is being hauled out, disconnect the power cables from the ADCP chassis and the Chirp DSP662 so that the transducers do not accidentally ping while out of the water (this can damage them). 
+
+Check with the Captain and ensure that the yard does not unintentionally damage the acoustical windows while working on the hull.
+
+Inspect the acoustical windows and carefully scrape the windows clean with a plastic scraper. Take digital pictures before and after cleaning to include with the yard report. 
+
+The inside of the transducer bays should probably be inspected for corrosion of the transducers and wires and cleaned each time the boats are hauled.  Drain the freshwater and check the neoprene lining to make sure it is staying well-attached
+
+Remove and clean the header tank with a descaler.  To clean the header tank, remove as much water from the tank as possible by pumping it out using the vacuum pump. Then carefully drain some water from the bleeder bolt in dry stores. Undo the union below the header tank and under the counter, remove the tank and clean with a descaler, then reattach the union. If the tank is too manky to clean it is fairly easy to replace. First unscrew the old tank from the brass fitting at the base of the tank. To make a new tank simply remove all fittings from a used DI column (CC) or Millipore filter (RCS), cut off one end, remove the contents, carefully enlarge the hole at the threaded fitting being careful not to damage the threads and screw it onto the brass fitting on the header tank plumbing using Teflon thread tape. 
+
+After a haul-out the transducer bays should be bled of any air that may have gotten in. Carefully loosen the bleeder bolt on the top of the bays until water just starts to seep out, then tighten the bolt to seal the bay back up. It may take awhile after the boat is back in the water to “burp” all the air out of the system so check the header tank each watch for the first couple days after a yard.
+
+==== Software: ====
+N/A
+
+==== Specialty Parts: ====
+N/A
+
+==== Manuals: ====
+ 
+SEA Computer Manual
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+===== PINGERS =====
+
+
+       
+{{:acoustic7.jpg?250|}}  {{:acoustic8.jpg?250|}}
+
+==== Introduction: ====
+
+
+OIS Model 6000
+The pinger is a 12-kHz sound source that we lower with gear on the hydro-wire.  It allows us to track the height of the gear off the bottom as it is lowered.  This is useful for gear we want to make sure hits the bottom (Shipek grab, gravity core, dredge), and gear we want to make sure doesn’t hit the bottom but we may want to get close to the bottom (rosette, meter net).  It can take some of the guesswork out of those deep sediment sampling attempts, and make hydrocasting near banks or canyons safer.  What we do is disable the Chirp’s transmit mode leaving it listening mode so that it can track the pinger.     
+
+In 1999, Sandy Williams (WHOI Ocean Engineering) took over the part of OIS that maintains the pingers.  He is a really knowledgeable, nice guy to ask for help.  He can be reached at 508-289-2725 (note that this is his WHOI number, so always ask first if he has time to answer a question about pingers).
+
+==== Operation: ====
+ 
+
+See Deployment and Computer Manual
+
+==== Tricks of the Trade: ====
+ 
+
+If oil ever leaks out of the transducer end of the pinger so that there is an air bubble, you can try to bleed out the air by tilting the pinger so that the bubble is below the screw bleeder on the rim.  Take out the screw, and squeeze the plastic reservoir to force out the air.  Replace the screw.  If the plastic reservoir gets low enough that it is puckering, you can replace the oil with castor oil or in a pinch with Wesson oil.  A small amount of air (half dollar size bubble) will not harm the pinger.
+
+==== Maintenance: ====
+ 
+The only real maintenance required is to change batteries.  
+
+**Use:**Freshwater rinse after each use.  Dry completely before stowing.
+
+**Weekly:**
+N/A 
+
+**Bi-weekly:**
+ N/A
+
+**Turnarounds:**
+N/A
+
+**Yards:** Wipe down outside with fresh water.  
+	
+Check spare battery voltage: three wires, should measure at least 11V and 22V depending on where you measure.
+
+Check to make sure the pingers are working.  This may mean that you need to connect the batteries.  There are two “switches” to turn off power to the pinger: the external magnetic switch, and an internal toggle switch on the internal board edge facing the cap; near where the wires exit the board.  For the pinger in use (with a bracket), generally the toggle will be ON and only the magnetic switch will be used, so make sure that the magnet is well taped in.  On the spare pinger, to safeguard the battery, we generally turn off the toggle as well, so to use the spare you will have to open the endcap and turn on the toggle.  Battery packs on the pingers have 3 terminals.  The total voltage across the two outside terminals must be above 22 V, and each side should read above 11 V.  
+
+To check/change the battery and/or to turn on the internal toggle switch, lay the pinger horizontally on a clean bench surface.  Make an orientation reference mark on the cap and housing so that you can reassemble in the same orientation.  Remember that this is a pressure housing so as usual make sure to wipe away any moisture before opening it, and that the end is not pointed at anybody when you remove the 3 bolts on the end of the pressure housing opposite the oil filled transponder.  Carefully slide the end, with electronic board and battery, out of the end.  Be careful not to damage the o-ring.  The battery is taped to the board.  Test it by disconnecting the 3-prong connector and measuring the voltages.  If the spare battery makes it ping loudly (with toggle on and magnetic switch out), then chances are a low battery is your problem.  Double check the voltages of the old battery, and if they are low, carefully remove the tape and install a new battery pack, taking care not to tape over any electronics.  Cut off and save the three-prong connector on the old battery pack to give to the Science Coordinator, and dispose of the old batteries.  Make sure the o-ring and seats are scrupulously clean using Kimwipes and clean hands.  Put a small amount of silicone grease on the surface of the o-ring and reseat the endcap.  Replace the 3 bolts after coating them with a thin layer of silicone grease; tighten them sequentially as you would for car wheel bolts.  DO NOT OVERTIGHTEN!!! If you do the bolts or you will damage the o-ring making the instrument susceptible to flooding (general rule of thumb is to tighten 1/8 turn after you feel the cap seat against the cap).  
+
+
+==== Software: ====
+
+Chirp software
+
+==== Specialty Parts: ====
+
+Magnetic Stir bar for switch 11/2” x 3/8” round
+
+==== Manuals: ====
+ 
+
+SEA deployment manual
+SEA computer manual
+Pinger OIS 6000 Instruction Manual 1995
+Pinger Use: A cheat-sheet 1995
+

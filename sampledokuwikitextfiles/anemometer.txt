@@ -1,0 +1,83 @@
+====== ANEMOMETER ======
+YOUNG INSTRUMENTS
+
+MARINE WIND MONITOR  {{:anemometer3.jpg|}}
+
+MARINE WIND TRACKER {{:anemometer2.jpg|}}
+
+==== Introduction: ====
+ 
+
+The anemometers, devices for measuring wind speed and direction, on both ships are mounted at the top of foremast.  The anemometer system consists of a wind-bird (Young Marine Wind Monitor 05106) attached via cabling to a junction box/surge protector which is in turn cabled to a display (Young Marine Wind Tracker 06206) in Doghouse and cable drop into ships network.  
+
+==== Swapping Out Anemometers: ====
+
+The anemometers are occasionally swapped out, typically during Yard, when they are sent out for calibration. It is fairly easy to swap out with the right preparation. On RCS, the manuals for both the anemometer (“wind tracker) and the wind monitor (i.e. the readout display in the doghouse) are in the top right drawer of the chart table.
+ 
+The anemometer sits on the top of the foremast and has a small collar that sits below it (the "orientation ring," see photo below), both of which are attached by hose clamps. You should not need to swap the orientation ring out with the one that comes in the box with the newly calibrated anemometer, as there is a notch that aligns to the anemometer mounting post assay that aligns with this ring to orient which way the anemometer should be installed. The cabling from the anemometer is fed into a small junction box and is secured with a watertight nut.
+
+{{:orientation_ring.jpg|}}
+
+
+Before heading aloft, you should gather the following items:
+  * Small to medium Phillips head screwdriver for the junction box lid
+  * Tiny flathead screwdriver for the wiring within the junction box (on RCS the smallest flathead in the black and red ratchet driver set works well)
+  * Zip ties
+  * Wire snips to clip zip ties
+  * Socket driver for hose clamp
+  * Anemometer (it’s a good idea to use some blue tape to hold the propeller in place while handling aloft)
+  * Radio
+  * Camera for documenting wire orders and how good you look aloft
+  * A couple buddies- one to go aloft with you, one on deck with a radio to monitor the readout in the Doghouse 
+
+Once you have made the trek to the top of the foremast and are situated, unscrew the small junction box lid with the Phillips head driver. Be aware the junction box itself is fiberglass and can give you some itchy splinters, so try not to rub against it too much. The lid is secured with a tag line on the inside, and the screws themselves are secured in the lid, so don’t worry about dropping anything once you unscrew the lid. The inside of the junction box looks like this:
+
+{{:anemometer_junc_box.jpg|}}
+
+On RCS, the wiring order in the junction box is as follows:
+
+
+Junction box at masthead (Aug 2014):		
+^Left side (from sensor)		^Right side (to deck box)|
+|1 - red				|1 - red|
+|2 - green 				|2 - green|
+|3 – blue				|3 – brown|
+|4 – white				|4 – white|
+|5 - black				|5 - black|
+|6 – bare wire (shield)	                |6 – bare wire (shield)|
+
+
+Using the small flathead, unscrew each of the screws on the left hand side of the junction box to release those wires from slots 1 through 6. Take a picture of the wiring before you do this is you’re worried you’ll forget the order. Unthread the watertight nut from the bottom of the junction box to be able to get the cable out; be sure you keep a good hand on this nut as once you take the cable out there is nothing holding it on.
+Thread the new anemometer cable into the watertight nut and thread into the junction box. Place the wires back into slots 1 through 6 in the proper order (Red, Green, Blue, White, Black, Bare) and tighten the screws back down. Give the wires a small tug to make sure they are secure, and then replace the junction box lid.
+
+Loosen the hose clamp that is around the mounting post assay to remove the original anemometer from the foremast. It’s a good idea to tie off the anemometer with a lanyard before you remove it from the foremast in case you drop it. Place the new anemometer on the foremast, and make sure you align the notch in the mounting post assay to the bump on the orientation ring so you get good wind data on the wind monitor. It’s a good idea to have someone on deck with a radio to tell you if the readout looks reasonable. Once you are satisfied with the orientation of the new anemometer and the data looks good, secure the hose clamp. Also make sure to secure any extra or loose cabling with zip ties. Take some photos of what the yard looks like from aloft and how good you look giving the ship wind data!
+
+
+
+
+==== Tricks of the Trade: ====
+ 
+
+Wire between sending unit and display in doghouse provided by Young is 22 gage 5 conductor This wire is still in use on RCS but in Oct04 the wire on Cramer was replaced with 20 gage and spiral-wrapped to protect it.  Works with single wire (yellow into output B on CC), though Paul Fucile points out this is not ideal; we are using a 485 transmitter (from wind instrument) and a RS232 receiver.  The 485 is supposed to have a +15V (A) and a -15V (B) and a ref.  We are only using B so it is getting a reference “ground” thru the ship.  
+
+EXC – white, red, small green
+REF – brown+black (2 wires)
+GND – thick green + shield from sending unit cable (2 wires)
+
+(CC) Junction box at masthead (Dec 2006):		
+^Left side (from sensor)		^Right side (to deck box)|
+|1 - empty				|1 - empty|
+|2 -  white				|2 -  white ( to EXC|
+|3 – green				|3 – green (to WD)|
+|4 – red				|4 – red (to WS)|
+|5- black/blue				|5- black/orange|
+|6 – bare wire (shield)	|
+
+{{:picture3.gif|}}
+
+==== Maintenance ====
+
+**Yards:** Check in the Science Coordinator to see if the anemometer will have to sent in for calibrations.  Talk with the deck department about installing and taking down the instrument.
+ 
+==== Manuals: ====
+**RCS:** Two manuals can be found in the right top drawer of the chart table, one for the Wind Monitor (readout in the Doghouse) and one for the Marine Wind Tracker (the anemometer itself).

@@ -1,0 +1,9 @@
+====== Assistant Scientist Manuals ======
+[[SEA Assistant Scientist Manual]]
+
+[[First Assistant Scientist Guide]]
+
+[[Second Assistant Scientist Data Guide]]
+
+====== Resources ======
+

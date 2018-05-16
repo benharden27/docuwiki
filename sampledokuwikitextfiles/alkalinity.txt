@@ -1,0 +1,122 @@
+====== Total Alkalinity Protocol ======
+
+===== INTRODUCTION =====
+ 
+Alkalinity measurements are an important step in understanding the carbonate equlilibria, which is one of the fundamental ways of understanding rock weathering, surface and ground water chemistry, and global climate.  When measuring alkalinity you are in essence measuring the waters ability to buffer against the addition of hydrogen ions.   For further information on this please refer to the references section where you will find a series of sources to expand your knowledge on this subject. 
+
+===== MATERIALS =====
+
+
+==== Materials: ====
+
+For drawing alkalinity samples:
+
+  * 12 dark glass alkalinity bottles with glass stoppers and the crate to hold them
+  * 12” plastic tube for drawing sample from niskin
+
+For titration of alkalinity samples:
+
+  * microburette or 100-1000ul Pipetter and 10-100ul Pipetter
+  * 100-1000ul pipette tips
+  * 10-100ul pipette tips
+  * magnetic stir plate and small stir bar
+  * pH meter and probes (2 probes in stand)
+  * small jar (to hold sample during titration)
+  * 100ml volumetric flask
+
+==== Liquid chemicals: ====
+[[ALKALINITY ANALYSIS CHEMICALS]]
+
+5%HCl: 2ml per sample               
+
+===== METHODS =====
+
+==== Setup ====
+
+1.	Draw sample from carousel into dark glass bottles, making sure not to introduce any air bubbles into the sample.  Let the bottles come to room temperature in the lab (at least 1 hour) before running analysis, and analyze no later than 3 hours after collection.
+
+2.	Set up the workspace for the titration:  pH meter (2 probes in stand), sample jar with SMALL stir bar, magnetic stir plate.
+
+3.	Calibrate the pH meter using the 4.01 and 7.00 standard pH buffers. (see pH Probe Calibration amendment bellow)
+
+**Note: pH buffer re-use: The nature of buffers is that they stabilize pH despite dilution; pH of the buffer does not change as long you rinse the probe well and gently dab it dry with a clean Kimwipe before you put in the buffer. So, pH buffer should be re-used on our boats. The buffer being reused should be stored in a sealed labeled container (label the cap too!) like a 50ml centrifuge tube.  The buffer packets are backups and for field work with the hand-held probe.
+
+==== Acid addition with Microburette ====
+
+
+1.	Fill microburette with 2 ml of 0.605 N (5%) HCl, being careful to expel any air bubbles from the burette. (The 100ul pipette can also be used here instead of the micro burette measuring each individual addition separately see below)
+
+2.	Pour a small amount of sample into glass volumetric flask, swirl to rinse.  Pour this rinse water into sample jar and over pH probes, swirl to rinse, discard.  Repeat for a total of 3 rinses.  
+
+3.	Measure 100 ml of sample in volumetric flask (taking care to measure the meniscus properly) and pour into sample jar.  Record volume on data sheet.
+
+4.	Put the pH probes (pH electrode and thermistor) into the sample in the sample jar.  Turn magnetic stirrer on lowest setting that allows the bar to spin, being careful not to hit the probes with the stirrer.  
+
+5.	Press the “measure” button on the pH meter.  Once the pH reading has stabilized (“pH” stops flashing), record volume added (=0 ml), initial pH, and initial temperature on the data sheet.
+
+6.	Add 0.4 ml of HCl to sample and take another reading.  Record volume added and pH/Temp. reading on data sheet.  
+
+7.	Add 0.05 ml to 0.1ml of HCl to sample and take another pH reading.  Record volume added and pH/Temp. reading on data sheet.  Repeat until pH reads close to 3.4.  
+
+8.	Add 0.05 ml to 0.1 ml of HCl to sample and take another pH reading.  Record volume added and pH reading on data sheet.  Repeat until pH reads close to 2.2.  The goal is to have 10-20 titrations between pH 2.2 and 3.4.  The amount of HCl you add will depend on the water.  In order to get enough data points  0.5ml might be necessary although using 0.1 is more common.
+
+==== Acid addition with Micropipette ====
+
+1.	Pour a small amount of sample into glass volumetric flask, swirl to rinse.  Pour this rinse water into sample jar and over pH probes, swirl to rinse, discard.  Repeat for a total of 3 rinses.  
+
+2.	Measure 100 ml of sample in volumetric flask (taking care to measure the meniscus properly) and pour into sample jar.  Record volume on data sheet.
+
+3.	Put the pH probes (pH electrode and thermistor) into the sample in the sample jar.  Turn magnetic stirrer on lowest setting that allows the bar to spin, being careful not to hit the probes with the stirrer.  
+
+4.	Press the “measure” button on the pH meter.  Once the pH reading has stabilized (“pH” stops flashing), record volume added (=0 ml), initial pH, and initial temperature on the data sheet.
+
+5.	Add 400ul of HCl to sample with the 100-1000ul pipette and take another reading.  Record volume added and pH/Temp. reading on data sheet.  
+
+6.	Add 50ul to 100ul of HCl to sample with 10-100ul pipette and take another pH reading.  Record volume added and pH/Temp. reading on data sheet.  Repeat until pH reads close to 3.4.  
+
+7.	Add 50ul to 100ul of HCl to sample with the 10-100ul pipette and take another pH reading.  Record volume added and pH reading on data sheet.  Repeat until pH reads close to 2.2.  The goal is to have 10-20 titrations between pH 2.2 and 3.4.
+
+==== Cleanup ====
+
+8.	When finished with sample, rinse pH probes with DI water into the sample jar.  Dispose of titrated sample in chemical waste bucket, taking care not to dump magnetic stirrer into bucket.  Rinse sample jar with DI water.
+
+9.	When finished with run rinse sample jar and microburette with DI water and stow all equipment securely.
+
+
+===== EQUIPMENT NOTES =====
+
+==== pH meter calibration ====
+
+1) Turn on. 
+
+2) Remove black caps from the temp. and pH probe, unplug blue plug on pH probe.
+
+3) Calibrate: Rinse probes with DI water and dab gently with a Kimwipe.
+
+4) Place probes in pH = 4 buffer soln.
+
+5) Press calibrate , wait for “pH” on right side to stop flashing.
+
+6) Press calibrate , take probe out of buffer.
+
+7) Rinse with DI, blot dry, put in pH = 7 buffer soln. & wait for “pH” to stop blinking.
+
+8) Press calibrate , press Measure.  Slope of calibration curve will show.
+
+9) Remove probe from buffer. Rinse with DI.  Blot dry and place in sample
+
+10) Press Measure and wait for “pH” to stop blinking. 
+
+11) Record your pH value … yay!
+
+12) Rinse probes with DI and plot dry, plug pH probe and cap both probes
+
+13) Turn off pH meter.  
+
+
+===== REFERENCES =====
+
+
+200901EZ based on A. Suida S220
+
+

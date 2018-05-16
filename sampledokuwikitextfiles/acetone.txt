@@ -1,0 +1,26 @@
+====== ACETONE ======
+
+===== Introduction =====
+Acetone is used to extract chlorophyll-a 
+
+=====90% ACETONE =====
+
+==== Materials ====
+=== Materials Needed ===
+  * Proper [[PERSONAL PROTECTIVE EQUIPMENT|PPE]]- this includes making sure NO person handling the acetone is wearing contact lenses!
+
+  * Clean 1000 ml graduated cylinder ([[COLOR CODING|BLUE TAPE]])
+
+=== Dry Chemicals ===
+
+=== Liquid Chemicals ===
+  * Deionized water
+
+  * Concentrated acetone
+
+===== Procedure =====
+  - Mix 9 parts concentrated acetone and 1 part deionized water in graduated cylinder. 
+     - Example: Add 900 ml acetone to graduated cylinder, add 100 ml deionized water to bring to 1000 ml.
+  - Transfer this volume to a labeled stock bottle.
+
+===== References =====

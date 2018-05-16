@@ -1,0 +1,41 @@
+====== STOCK CHEMICAL MIXING FOR ALKALINITY ======
+
+===== Introduction =====
+It will not always be necessary to mix chems for alkalinity. 
+
+===== Synthetic Seawater =====
+==== Materials ====
+=== Materials Needed ===
+  * Proper [[PERSONAL PROTECTIVE EQUIPMENT|PPE]]
+  * Clean 1000 ml volumetric flask ([[COLOR CODING|BLUE TAPE]])
+  * Clean funnel ([[COLOR CODING|BLUE TAPE]])
+
+=== Dry Chemicals ===
+   * NaCl pre-weigh for synthetic seawater (14 g for Atlantic, 17 g for Pacific)
+
+
+=== Liquid Chemicals ===
+  * Deionized water
+
+==== Procedure ====
+  - Add a small amount of deionized water to the 1000 ml volumetric flask
+  - Add the NaCl to the volumetric flask a little at a time so the funnel does not get clogged. It is helpful to add DI water to the pre-weigh container, swirl, and pour through the funnel several times to make sure all of the pre-weigh is added.
+  - Once all of the NaCl is added to the flask, bring the final volume up to 1000 ml with deionized water. Swirl and invert the flask to ensure all of the pre-weigh is dissolved.
+  - Transfer this volume to a labeled stock bottle.
+
+===== 5% Hydrochloric Acid =====
+==== Materials ====
+=== Materials Needed ===
+  * Proper [[PERSONAL PROTECTIVE EQUIPMENT|PPE]] for concentrated acids.
+  * Clean 1000 ml graduated cylinder ([[COLOR CODING|BLUE TAPE]])
+
+=== Liquid Chemicals ===
+  * Synthetic seawater (see above)
+  * Concentrated hydrochloric acid 
+
+==== Procedure ====
+  - Fill a 1000ml graduated cylinder to 950ml with synethetic seawater.
+  - Add 50ml of concentrated hydrochloric acid. **ALWAYS ADD ACID TO WATER AND NEVER WATER TO ACID!**
+  - Transfer this volume to a labeled stock bottle.
+
+===== References =====

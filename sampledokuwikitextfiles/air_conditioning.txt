@@ -1,0 +1,130 @@
+====== AIR CONDITIONING ======
+
+ {{:ac1.jpg|}}
+
+===== ELECTROGRAPHICS AAC SOLID STATE COOLERS =====
+ 
+==== Introduction: ====
+
+The AAC coolers are designed to run without CFC’s or moving compressor units. The coolers incorporate solid state Bismuth Telluride devices, also known as Peltier Effect devices, to generate cooling action with the application of DC power. These devices are sandwiched between aluminum heat sinks that aid in thermal transfer. They are designed to be a low maintenance unit. The solid state units are now backups but should come on automatically when the primary AC systems are insufficient to keep the computer cabinets cool. 
+
+==== Operation: ====
+
+To operate the AAC Solid State Coolers, simply ensure that they are plugged in and set the thermostat to the desired temperature. The internal fans run continuously to circulate air while the external fans run only when the temperature inside the racks exceeds the thermostat setting. The thermostat is a dial located on the side of the unit facing the computer equipment. The thermostats should be set to approximately 85 °F and checked by adjusting them so they cycle on when the internal temperature reads above 85.
+
+==== Tricks of the Trade: ====
+ 
+The port side AC system on the RCS is now connected to a switch that is external to the computer cabinet mounted on the outboard lab bulkhead. The thermostat has undergone much troubleshooting in the past year (2014-2015) to try and get it to kick on appropriately. This external switch exists for those times when the thermostat has not worked well; manually switching the fans on and off has been the SOP for many trips. 
+
+==== Maintenance: ====
+
+
+***Very Important***  The internal fins will condense if there is significant moisture in the computer cabinet.  Please make sure to check the condensate traps for moisture regularly and to keep the cabinet doors closed!!
+
+**Use:**
+N/A
+
+**Weekly:** Vacuum external cooling fans to avoid dust buildup, use a small brush to help remove larger pieces.
+
+**Bi-weekly:**
+N/A
+
+**Turnarounds:** Clean aluminum cooling fins. To access fins, remove the four bolts holding the fan housing and shroud assembly in place. Vacuum the fins and if necessary, clean the fins with a suitable liquid solvent and a small brush.
+
+**Yards:**  Clean aluminum cooling fins. To access fins, remove the four bolts holding the fan housing and shroud assembly in place. Vacuum the fins and if necessary, clean the fins with a suitable liquid solvent and a small brush. 
+
+==== Software: ====
+N/A
+
+==== Specialty Parts: ====
+N/A
+
+==== Manuals: ==== 
+AAC-145_MANUAL (RCS)
+AAC-141_MANUAL (CC)
+
+ 
+===== MERMAID MARINE AIR CONDITIONER (CC) =====
+
+                   
+AC UNIT	{{:ac2.jpg|}}			    CONDENSATE PUMP {{:ac3.jpg|}}
+
+==== Introduction: ====
+
+The Mermaid Marine Air model M5C-U is located on the lab sole, forward of the electronics cabinets. For cooling it uses seawater that comes from the debubbler discharge on the Flow-through system and returns the seawater to the drain at the piping just above where it goes through the lab sole. The temperature is controlled by a thermostat located on the after port side of the bulkhead inside the electronics cabinet. During normal operation the unit produces a large volume of condensation which is collected in a pan on the starboard side of the air conditioner unit. There is an Aspen Mini Orange Condensate Pump, controlled by a float switch that sucks the water out of the condensation collection pan and into the waste water stream.
+
+==== Operation: ==== 
+
+To turn on the Mermaid air conditioner set the HEAT, OFF, COOL switch on the thermostat to COOL. The thermostat is pre-programmed for the proper settings. If the air conditioner is running but the cabinets are still warm, and the silver cold air duct is warm, the unit needs to be reset. The reset button is red, set in a green case located on the upper port side of the unit. NB The air conditioner should not be operated without water flow so be sure and turn it OFF when the flow though pump is off.
+
+==== Tricks of the Trade: ====
+
+  - If there is blockage:
+    *For easier access pull the unit out from behind the computer cabinet. Be careful not to move it by any of the coils, which are labeled “no touch”.  Once the unit is out from behind the cabinet the best idea is to do a series of test to determine where the blockage is.  Turn the flow to the AC off on the flow through. Then on the AC unit detach the input hose (have a bucket ready to catch any water that might be left in the line).  Then turn the flow back on to see if water is making it cleanly to the unit. If so then turn of the flow and reattach the input hose to the AC unit.  Next, detach the Out put hose and then turn on the AC water flow to see if water flow is making it thru the condenser unit in the AC. If so then stop the water flow and re attach the out put hose. 
+  - If there is Low flow out of the AC Unit:
+    *Low flow out of the AC unit likely means that there is a blockage in the condenser unit.  The easiest way to deal with this is to fit the Fresh water house with a nipple fitting and attach the end of the hose to the output hose from the AC unit.  Then detach the input hose from the flow through system near the sink, and then back flush the system with the fresh water house into the sink.  This may knock the blockage out of the line and improve the flow. 
+    *However, if this technique is unsuccessful, then it may be necessary to use a CLR and water solution to break up the blockage.  The way to do this is to detach the input and out put hoses and then use a funnel to pour in CLR solution until it works its way through to the output side of the condenser, then tie both the input and out put hoses up in the air high enough that the mixture does not spill out.  Let the mixture sit in the condenser for an hour or so.  Then re back flush the unit and see if this gets the blockage out.
+
+
+==== Maintenance: ====
+ 
+
+**Use:**  Ensure that water is always flowing through system when the unit is running.
+
+**Weekly:** The water system should be flushed with fresh water at the same time the flow through is being rinsed. The air conditioner unit should be wiped clean with fresh water. 
+
+**Bi-weekly:**
+N/A
+
+**Turnarounds:**  The air filter on the starboard side of the unit should be cleaned by vacuuming and washing and drying in freshwater and the condensation collection pan should wiped clean. 
+
+**Yards:**  The air filter on the starboard side of the unit should be cleaned by vacuuming and washing and drying in freshwater and the condensation collection pan should wiped clean. 
+
+==== Software: ====
+N/A
+
+==== Specialty Parts: ====
+N/A
+
+==== Manuals: ====
+Mermaid AC OWNERS GUIDE 02-17-05
+Mermaid AC Condensator manual ver3
+	 
+ 
+===== FUJITSU MINI-SPLIT AC SYSTEM (RCS) =====
+
+{{:ac4.jpg|}}  {{:ac5.jpg|}}
+
+==== Introduction: ====
+
+This two-component AC system was installed to cool and dehumidify the entire RCS dry and mod labs in an effort to preserve the costly lab equipment.  The system’s major components are an air-handler/evaporator in the dry lab mounted above the Labutil computer and desk and a condenser outside just forward of the main mast.  There is an Aspen Mini Orange Condensate Pump, controlled by a float switch that sucks the water out of the condensation collection pan and into the waste water stream. This now sits external to the lab AC unit for easy cleaning and monitoring.
+
+==== Operation: ====
+
+The unit has a thermostat on the panel the air handler hangs from. Adjust this thermostat to maintain the electronics cabinets below 90 degrees if possible.
+
+==== Tricks of the Trade: ====
+On trips that are mainly in the South Pacific (very hot and humid) this system will work more efficiently if the door between the mod lab and wet lab is kept closed.  This will help keep the dry lab from having condensation problems.  This will also keep the computer cabinets at a more consistent temperature.
+
+==== Maintenance: ====
+ 
+**Use:**
+N/A
+
+**Weekly:** Vacuum vents on condenser and clean air filter on air-handler. Clean the pump as necessary (monitor mold buildup).
+
+**Bi-weekly:**
+N/A
+
+**Turnarounds:**
+    *Check condition of aluminum heat dissipating fins on condenser
+    *Check and if needed, clean tubing and box associated with the orange condensation pump being careful not to lose the magnetic float switch
+
+**Yards:** Dismantle the air handling unit as much as possible and clean out the dirt and mold that accumulates on the inside.  Make sure the float switch is functioning properly.  Carefully inspect all the tubing for corrosion and clogs.  Double check that the manual is onboard.  
+
+==== Specialty Parts: ====
+N/A
+==== Manuals: ====
+ 
+
+Service Instruction Manual 24CL_RL_30_36CLX

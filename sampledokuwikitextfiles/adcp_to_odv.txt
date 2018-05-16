@@ -1,0 +1,42 @@
+====== ADCP to ODV ======
+
+===== Introduction =====
+
+===== Procedure =====
+
+1.	Back up ADCP files via Second Copy to Superbox.
+
+2.	Open the WinADCP program.
+
+3.	Go to File --> Open --> choose the .LTA file from ADCP data on \\Adcp\data .  Make sure it is set on Velocity East (and on ‘Contour’ tab choose ‘East’ under ‘Data Type’ ‘Velocity’).
+
+4.	Choose Export on the top toolbar.
+
+5.	Under ‘Series/Ancillary’ tab:
+	in the ‘Series Data types: Velocity’ section select: East, North, Magnitude, and Direction
+	in the ‘Series Data types: Echo Amplitude’ section select: Average
+	in the ‘Ancillary Data Types: Navigation’ section select: Lat/Lon (deselect Mag/Dir)
+
+{{:adcptoodv_1.jpg|}}
+
+6.   Make sure all ENSs are selected not just a subset
+
+7.   Select bins to export (we want 1-60, but you can only do up to 40 at a time, so for every .LTA file you will export two text files, 1-30 and 31-60 usually)
+
+8.   Click ‘Write File’ and save in \\Labutil\Data\OceanDataView\ADCP text files as ADCP_S214001_1-277_1-30.txt  (ADCP_Cruise number LTA file number_ENSs_Bins) Then select the other set of bins and export the second file (second file would be bins 31-60).
+
+9.   Open the ADCP to ODV macro on the desktop and type the name of the ADCP text file you just exported in the prompt box. (Or copy and paste the name in).  After a brief excel seizure the file will be automatically saved as an ODV text file in the ‘ADCP text files’ folder (it will have the same file name but with ODV_ replacing the ADCP_).  Run macro again for the second file. No need to save when closing Excel.
+
+10. Import ODV txt file into Ocean Data View ADCP var file.  Import the first file as ‘Add/Update’ station data under ‘Import Mode’ (after selecting file to import a box pops up, this choice is in upper left corner).  For the second file, be sure to instead choose ‘Merge Data’ as Import Mode.
+
+{{:adcptoodv_2.jpg|}}
+
+**First import of the cruise?** 
+
+To set up the ADCP ODV var file:
+
+Open ODV, under File click “New” and name it (SXXX_ADCP). It will ask you to define your collection variables. Select the ODV bin 1-30 txt file and check to verify if import parameters are what you want.   Then go ahead and Import (as an “ODV Spreadsheet”) the two txt files (as Add/Update-- bins 1-30, and Merge Data-- bins 31-60).  
+
+To set up surface wind vector plots, go to the ‘Surface’ tab.  Choose variables: X=E component, Y=N component, Z=Magnitude.  Right click on the plot and choose ‘Display Options’.  Change Data Display from Dots to Arrows, a box will pop up and choose: X=East Component, Y=North Component, and change scale to 500 (ish).
+
+Under the section tab you can look at East Component, North Component, or Echo Amplitude (this is the strength of the return signal...more signal means more particulate floating stuff (plankton) so you can see Diel Vertical Migration patterns).

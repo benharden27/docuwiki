@@ -1,0 +1,172 @@
+====== Argo Float Deployment ======
+
+==== Argo Background ====
+Argo is an international collaboration that collects high-quality temperature and salinity profiles from the upper 2000m of the ice-free global ocean and currents from intermediate depths. The data come from battery-powered autonomous floats that spend most of their life drifting at depth where they are stabilized by being neutrally buoyant at the "parking depth" pressure by having a density equal to the ambient pressure and a compressibility that is less than that of sea water. At present there are several models of profiling float used in Argo. All work in a similar fashion but differ somewhat in their design characteristics. At typically 10-day intervals, the floats pump fluid into an external bladder and rise to the surface over about 6 hours while measuring temperature and salinity. Satellites or GPS determine the position of the floats when they surface, and the floats transmit their data to the satellites. The bladder then deflates and the float returns to its original density and sinks to drift until the cycle is repeated. Floats are designed to make about 150 such cycles.
+
+{{:whoi_argo_schematic.jpg|}}
+
+==== What Argo Measures ====
+
+The standard Argo mission is a park and profile mission where the float descends to a target depth of 1000m to drift and then descends again to 2000m to start the temperature and salinity profile. In the beginning of 2014, 80% of floats profile to depths greater than 1500m. Another 12% profile to between 1000 and 1500m.
+
+As the float ascends, a series of about 200 pressure, temperature, salinity measurements are made and stored on board the float. These are transmitted to satellites when the float reaches the surface. For floats using high speed communications with more bandwidth capabilities, measurements are taken more frequently, often up to every 2db, resulting in several hundred measurements per profile.
+
+For 70% of floats in the Argo array the data are transmitted from the ocean surface via the Système Argos location and data transmission system. The data transmission rates are such that to guarantee error free data reception and location in all weather conditions the float must spend between 6 and 12 hrs at the surface. Positions are accurate to ~100m depending on the number of satellites within range and the geometry of their distribution.
+
+An alternative system to Argos using positions from the Global Positioning System (GPS) and data communication using the Iridium satellites now comprises 30% of the Argo array. Iridium is becoming a more attractive option as it allows more detailed profiles to be transmitted with a shorter period at the surface and even two-way communication. In 2013, 60% of floats were been deployed with Iridium antennas and 40% with Argos antennas.
+
+On CC we use the SOLO II model of Argo float; on RCS we use XXXX
+
+==== Contact Info ====
+
+For CC, our contact is Pelle Robbins from WHOI.
+
+For RCS, our contact from NOAA/Scripps is Elizabeth Steffen. 
+
+===== SOLO II Pre-Cruise Testing (CC Floats) =====
+
+On the CC SOLO II model floats, a pre-cruise check of the floats is required prior to sailing. In this testing, the Argo floats run through a self-diagnosis and send a confirmation email back to WHOI to verify that they are initialized and working properly. Do NOT deploy any floats unless you hear back from WHOI that this email was received! Thus, it is a good idea to perform this test as soon as possible to ensure enough time to hear back from WHOI before sailing.
+
+**STARTING THE FLOATS:**
+
+The floats must be started up with the water release end down (bladder end), and the box must be in a  vertical orientation. In most cases we unpack them from the box and store them "bare" in the overhead racks in the main saloon, so WHOI marks on the float directly where we need to do the testing.
+
+  - It will be necessary to choose the proper location to Start-up the float. It must be: A) a relatively quiet environment as the Pump must be heard at the time of the magnet swipe, and B) the float must have a clear view of the sky to get a GPS position and offload  Iridium test messages as part of the Start-up procedure.
+  - Open the window marked RESET on the side of the box and remove the cardboard cover at the Water Release end of the float to allow access to the Bladder. In our case, this area will just be marked "RESET" with Sharpie by WHOI since we don't use the boxes they send.
+  - Swipe the magnet over the area marked RESET on the instrument. The sweep should extend beyond the label on the float to insure the magnetic reset switch has been activated. Immediately after a successful Start-up, the Pump should be heard running for about one second. This is the first indication the float has successfully Started-up. If the Pump isn’t heard, re-swipe the magnet. The motor will briefly run again 10-12 seconds after the magnet swipe.  About 30 to 40 seconds after the swipe the motor will start and run for approximately 5 minutes while the float fills the external bladder. If the float startup is being done on a ship and a stethoscope is available, the stethoscope can be held against the pressure case to hear the motor.
+  - At this point the float will start a self-diagnostic, Built In Test (BIT). A portion of that test is to offload test messages to verify communications with the Iridium system and to send the mission parameters so that they can be verified. At the start of the BIT, the float will inflate the external bladder, which can be monitored by reaching past the water release at the bottom of the float. Verify that the external bladder has been inflated. 
+  - During the Built In Test the external bladder will deflate. However, the deflation of the external bladder does not signify the successful completion of the Built In Test. The only confirmation that the float successfully passed the BIT, is that an email will be sent within about an hour of the completion of the BIT. Assuming you have registered with the WHOI float lab, you should receive a copy of the confirmation email.
+
+The SOLO II float should NOT be deployed until the WHOI Float Lab confirms that the test messages have been sent and that the float has indicated that it is ready to be deployed. If requested by the Float Lab to re-swipe a float, wait until the bladder has deflated from the previous swipe. Do not re-swipe a float that has a bladder inflated. 
+
+===== Navis Float Deployer Interface Procedure (RCS Floats) =====
+
+{{:navis_argo1.jpg|}}
+
+This device is designed to execute testing for Navis model Argo floats. If connected to a float and not a computer simultaneously, the device will execute checks for the float and display the result via red/green lights. Logs of checks will be stored in the device and can be downloaded when the device is connected to a computer.
+
+1. Strap device to float using velcro strap Align arrow with round anode
+
+{{:navis_argo2.jpg|}}
+
+The float must be standing upright for testing! If float is on its side, this testing can cause  a lock-up which will permanently disable the float.
+
+2. Avoid static discharge to hexagonal pressure port: touch the float hull, then clip black lead to the round anode, then clip yellow lead to the hexagonal pressure port.
+
+**Optional:** Connect to a terminal program (such as Hyperterminal) by plugging the USB into a computer to see a display of the tests. When connected to a computer, a yellow light displays to show device is connected/charging. **DO NOT INPUT KEYSTROKES!**  Commands entered can accidentally disable float.
+
+{{:navis_charging.jpg|}}
+
+3. To start test, push the start button on the test box. This will be acknowledged by a flash of the red and green lights. The test will take approximately 4 minutes to run. While running, the lights will alternate between red and green. If it is optionally connected to a computer, the computer will display the tests that are running.
+
+{{:navis_start_test.jpg|}}
+
+When the test completes, it will show steady green light if successful, red light if failed. Acknowledge the result by pushing the button once and disconnect the device. 
+
+4. If successful, deploy the float. Do NOT deploy if the green light is not shown! Be sure to disconnect device from float  before deployment!
+
+__**Additional Information:**__
+
+**Battery:** 
+  * The Navis test box has rechargeable, lithium-ion, single-cell battery, 9.6 Wh capacity.
+  * The battery charges when connected to USB (but not during test sequence execution).
+  * A flashing yellow LED indicates battery is charging.
+  * Charging stops automatically when battery is fully charged. The battery takes approximately 8 hours to fully charge
+
+**In case of failed test:**
+  * If time permits and another float is on board, please try the test on a different float. Please contact us about the failed float. Ideally another test can be run on the failed float and the logs sent to shore for evaluation prior to the deployment of that float.
+  * Do not deploy a float that has not obtained a green light without consulting with shore.
+  * Please note:  very hot sun can cause spurious failure of the test, so please keep float out of sun as much as possible immediately prior to the test.
+  * Once float is tested, there is no time limit for when it should go into the water.  There is also no problem with re-testing a float.
+
+**Other Information:**
+  * The driver must be installed on computer for tester box to talk (not to charge). The provided disk has drivers if no internet connection available. 
+  * A wall plug-in USB charger provided
+  * A terminal emulation program must be available (RealTerm is on provided disk). Floats talk at 9600 Baud, 8-N-1
+  * Logs stay in memory in the tester until it is cleared.  Instructions for dumping the tester logs are below. Elizabeth Steffen would like to get the logs once internet connections are viable; waiting until port is fine (coordinate this with the Technical Science Coordinator).
+
+If you need advice on running the tester, Dan Quittman at SeaBird is another resource, so please feel free to cc him on questions:  Dan quittman <dquittman@seabird.com>   
+
+===== Downloading PMEL ARGO float test results from tester box =====
+
+It is recommended you first consult the section in the ARGO deployment manual entitled Navis float deployer interface for information on the use of the tester box. Note that multiple tests can be downloaded at one time, so there is no need to download from the test box after each float is tested unless there is an issue (e.g., failed test) or if requested. If all floats pass there tests and are deployed, the test data from all 4 floats can be downloaded after the last float is deployed.  
+On RCS, use Wanderer 3 laptop in administrator mode. The drivers for the tester box are only installed on Wanderer 3. They are also located on the Software EHD if needed on an alternate computer. 
+
+To download test data from the communication box:
+
+1. Plug the USB cable from the com box into the laptop
+
+2. Open Tera Term and select ‘Serial’ in the initial dialog box. The connection (typically COM7) should show up automatically.
+
+{{:argo_tester1.jpg|}}
+
+3. Ensure the settings match those outlined in the manual (also noted below) by selecting  ‘Setup>Serial Port’:
+
+{{:argo_tester2.jpg|}}
+
+4. Go to ‘File>Log’ – enter a sensible filename and location. This is where the downloaded information from the test box will be saved.
+
+{{:argo_tester3.jpg|}}
+
+5. Enter command mode by pressing ‘Ctrl+C’. You should see an N>:
+
+{{:argo_tester4.jpg|}}
+
+Now you can enter commands outlined in the Navis Float Deployer Interface user guide:
+
+Log Upload: uploads log file. (Use terminal emulator program to save uploaded log file.)
+
+Log Stat: shows flash usage.
+
+Log Clear: erases log file – Not necessary  under normal circumstances -** ONLY USE IF NECESSARY TO CLEAR FILE SPACE** - ensure log has been saved; don’t use unless running out of memory, which should not come close to with under 25 floats)
+
+
+6. Type: Log Upload and hit ‘Enter’you’ll see a stream of data being downloaded:
+
+{{:argo_tester5.jpg|}}
+
+7. Open the log you saved with notepad and verify it looks like the data downloaded.
+
+{{:argo_tester6.jpg|}}
+
+8. If all looks well, save the downloaded log and move it into an ARGO folder on the data EHD to send back to World Headquarters. 
+
+9. In Teraterm File>Disconnect to close the connection.
+
+10. Rejoice
+
+===== Deployment =====
+
+==== SOLO II Float Deployment (CC) ====
+  - Perform testing as outlined above before leaving the dock to ensure floats are in good working order.
+  - Remove the plastic sleeve and shrink wrap from the deployment box. Remove the cardboard that protects the water release. This will expose the water release mechanism that will release the box from the deployment harness when the bottom of the box hits the sea surface.
+  - Gather the 4 loops of the nylon float bridle through the carabiner. Pass the slip-line through the carabiner. The line provided is 3/8” Dacron and 150 ft long. Attach one end of the slip-line to a convenient, sturdy point.
+  - Lower the box to the water so that the water release gets wet.  The release works best if the box is only lowered enough to wet the bottom of the box, but not so much that the box is floating on its side. This is a multi-person job as the float box is 5’ long and about 45 pounds. There is no need to slow the ship. When the release mechanism gets wet and the starch ring dissolves, it will release the box from the bridle and the entire box will slip away. The box is sealed with water-soluble tape and is totally biodegradable. 
+  - Rinse the launch bridle and release mechanism with fresh water.  
+  - Fill in the launch date, position, time, etc. on the launch sheet. 
+ 
+If it is at all possible, email the launch information with the instrument number, launch date and position to deploymentinfo@whoi.edu. Please collect the deployment equipment, the launch harnesses, and release mechanisms and put them in the deployment box. When you return to port, we request that you ship this deployment equipment back to us, COD, to:
+Float Operations Group, MS # 30,  Clark South G-72, Woods Hole Oceanographic Institution, 266 Woods Hole Rd, Woods Hole, MA 02543
+
+==== PMEL Navis Float Deployment (RCS) ====
+
+  - Be sure all pre-deployment float testing has been completed (and the float has passed) before deployment- see above.
+  - When deploying floats, make sure not to leave anything (e.g. line, tape, bungee-cords, tie-wraps) on the float.  These floats are ballasted to about 2 grams of weight.  Any material not meant to be on them (or any material removed from them that is meant to be on them) may incapacitate the float.
+  - Visually inspect the float for signs of damage.  Make sure the metal cylinder appears properly seated with the end cap (so that water will not enter), that the plastic housing on the bottom is intact and attached, and that nothing on the top cap has visible signs of damage. Additionally:
+     - Check that the end cap on top (with the antennas and instruments) is intact.
+     - Make sure any plastic bags (pink), red plugs and clear plugs (connected with strings), and other strings and rubber bands are removed from the instrument head so that the CTD will function properly. Please try to avoid touching the hexagonal pressure port as it can be permanently disabled by static discharges.
+     - Make sure the metal end cap seems properly sealed with the body of the float so that water will not enter the float body when it is deployed
+     - Check that the bladder housing at the bottom of the float is intact
+  - The black or blue plastic handle near the grey plastic cowling is only for person-handling convenience. Do not use this handle for lowering the float to the water with a line. Only use the blue ring for that purpose. Keep the ship speed slow,1-3 knots, (or what is deemed appropriate to allow a gentle deployment and get the float to move away from the ship) during deployment. Position yourself and the float such that the float will move away from the ship once deployed.
+  - If using the line, lower the float on the line hand over hand, keeping hold of both ends of the line, until the float is in the water (Do not let the float slide down the line; this can burn through the plastic skirt). Try to keep the float from hitting the ship's hull, particularly the instruments and antenna on top.
+  - Release the free end of the line and retrieve it so as to prevent it from tangling with the float. (Previous deployers have found that throwing the free end of the line into the water, then gently pulling the line back up on deck from the attached end works well). The float must be free of the line (with nothing extra attached when deployed) to function properly.
+  - Note the lat, lon, and deployment time (GMT) on the deployment sheet. Floats’ bottom cowlings are sometimes slow to fill with water, so it can take some time for the float to flip upright and sink.  There is no need to delay the ship’s departure to observe this process.
+  - Please provide PMEL, pmel_floats@noaa.gov, with each float’s deployment lat, lon, deployment time, and name(s) of the deployer(s) within a few days of deployment (getting this information allows the data to immediately enter the international Argo program’s database). For a copy of the datasheet, click {{:navis_argo_datasheet.pdf|here}}.
+
+===== REFERENCES =====
+
+SOLO II Float Startup/Launch Instructions manual
+
+http://www.argo.ucsd.edu/How_Argo_floats.html
+
+http://www.argo.whoi.edu/

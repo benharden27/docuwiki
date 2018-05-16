@@ -1,0 +1,313 @@
+# Equipment {-}
+
+## Acoustic Doppler Current Profiler {-}
+
+### Introduction
+
+The Ocean Surveryor 75 Acoustic Doppler Current Profiler (ADCP), made by RD Instruments, sends out a 75 Khz sound signal and measures the Doppler shift and return time of the signal reflecting from particles in the water (plankton and sediment) to calculate the net current movement. The system components are a transducer mounted in the hull of the boat (described in transducer section below), an electronic chassis (white box in computer cabinet), a computer in the electronic cabinet, as well as the ADU5, Gyro Compass and Motion Reference Unit (MRU) (described in other sections). The chassis is the interface between the computer, transducers and MRU. The system requires little maintenance other than keeping the computers and transducer windows clean. 
+
+ ### Before each cruise and for EOC
+ 
+
+There are diagnostic tests that should be run prior to each cruise and part of the end of cruise report.  They keep track of instrument performance.  Unfortunately, passing all of the tests is not a complete guarantee that your instrument works properly.
+
+**Caution: Do not even test the ADCP if you are at dry dock.  The transducers will be permanently damaged if turned on when the hull is out of water.**
+
+1.  Turn on the ADCP computer and the white rocker switch on the front panel of the ADCP chasis.  Log in as administrator.
+
+2.  There should be a shortcut to BBTalk on the ADCP computer desktop; if not, the file is located in `c:\Program Files\RD Instruments\RDITools`.  Double click on BBtalk.exe and it will open the BBTalk window.  
+
+3. The program will then have a pop up window.  Check that the settings are as follows: 
+
+ADCP Type = WorkHorse\\
+Connect Using = COM1, 
+
+Then press “Next”
+
+4. On the next window:
+
+Baud Rate = 9600\\
+Parity = None\\
+Stop Bits = 1\\
+Flow Control = None
+
+Then press “Next”
+
+5. On the next page, under Options, you should have check marks in “Send Break On New Connection” and “Send CK On Baud Rate Change (CB Command), then press “Finish”
+
+The BBTalk – [COM1:] window will open showing you the Firmware version
+
+Dec05 on CC = Firmware Version 23.11
+Aug11 on RCS = Firmware Version 14.20
+
+6. To test the system setup, go to File, Send Script File, Browse
+
+7. Select the file `c:\Program Files\RD Instruments\RDI Tools\TestOS.rds` (you may need to specify RDI Script (*.rds) in the “Files of type:” box), click OK
+
+8. The program will run through its paces and should show you some data about the transducer and firmware version (v. 14.20 on RCS aug03, v. 23.11 on CC Phase2 system Dec05).  To help it along pay attention to the screen for the prompt to hit return for the next step to happen.
+
+The final line of text should say: “All tests have been run and if passed your system is ready for deployment”.  You can now scroll through the screen results to check the following: 
+
+**RAM test and ROM test** should both show “PASS” *Note that on the Phase2 on CC these commands (PT8 and PT9) do not return anything.  
+
+**PT 3** passes if the correlation magnitude of each beam drops to less than 0.5 by time lag 5.  Otherwise interference may be present.  Interference may result from non-random signal such as the Chirp pulse, electric current or other mechanical equipment and will show up as correlation in the PT3 test.  Random noise, because it does not repeat will cause correlation.  Correlation magnitudes should start at 1.00 for each beam, then decrease and the numbers on the last line should be < 0.1; numbers for all 4 beams should be similar 
+ 
+**RSSI** (Receive Signal Strength Indicator) is echo intensity for each beam. Numbers should be <20, should be roughly equivalent and should report “PASSED”.  With Chirp off, numbers like 6  4  7  6 are about normal; with Chirp on, they may be higher due to interference. A low value (good) is less than 20, a very high value (bad) is more than 40.  
+
+**Bandwidth check:** Actual numbers under each beam should be within 20% of “Expected” value and report “PASSED”
+
+*Older versions of the script may tell you to see the results in a file called OS_RSLTS.TXT, but actually the results are in file called OS_TESTS.txt in the directory in `c:\Program Files\RD Instruments\RDITools`.  Please add the date to the end of the file name (for example “OS_TESTS 25aug03.txt” and leave it there so we can troubleshoot later if you have a problem.
+
+There is more information within the Ocean Surveyor Test Guide, but please check with office before trying any other test command.    
+
+### Start up
+Last updated: 26 Jan 2014_CAD
+
+=== Start Data Collection ===
+
+
+1. Turn on the ADCP Computer. Log in as adcp, no password. 
+
+2. Double-click on the VMDAS icon on the ADCP computer desktop (running v1.3 on RCS aug03, v1.3 on CC Dec05).
+
+3. Turn on the ADCP, a white rocker switch on the ADCP topside unit (RCS the left red power light under the switch should come on; CC yellow light next to switch). 
+
+5. Click on File/Collect Data
+
+6. Click on Options, Load, then:
+
+  *Select the appropriate .ini file, one of:
+      *//10 M Bins Bottom Track On.ini// for water up to about 500m deep
+      *//10 M Bins Bottom Track Off.ini// for water over 500m deep
+
+  *Click on Open. You only need to do this if changing from deep water mode to shallow water mode or back. At startup, VMDAS will load the last configuration used. CAUTION: Do not delete these configuration files. 
+
+**RCS only**
+updated: 26 January 2014_CAD
+
+7. Click on Options, Edit Data Options and use the following screen shots as a guide:
+
+A.) Communications Tab: Make sure each item is set for the correct Com Port Setup. The 'correct' Com ports are shown below (ADCP input = Com 1, NMEA 1 = Com 3, NMEA 2 = Com 4, NMEA 3 = Com 5). 
+
+{{:1adcp_settings_comm_tab.jpg|}}
+
+If you need to change the com port setup:
+  * Select an Item to set  
+  * Set communication parameters. For NMEA 1 (Nav GPS = Com 3 = 4800 = No Parity = 8 = 1), you will need to DISABLE this input to make sure it does not interfere with the other inputs. Click the "Enable Serial" box to remove the check mark.
+  * Once you have changed the communication parameters, click SET (this applies even if you've only disabled an input and not changed anything else). You may have to click SET more than once, so make sure the Com port setup on the right hand side has updated with the newly SET parameters.
+  * Repeat these steps for NMEA 2 and 3 to make sure the settings are correct for these com ports. (NMEA 2 = ADU5 = Com 4 = 4800 = No Parity = 8 = 1) (NMEA 3 = MRU = Com 5 = 9600 = 8 = 1). Both of these com ports should be ENABLED.
+
+
+B.) Recording Tab:  Enter the Cruise Name (i.e. S249) in the Deployment Files Name box. If this is the first ADCP file of the cruise, enter “1” in the Number field. VmDas will append a sequential file number to the specified file name each time data collection is started. For Example, S249 filenames will be assigned as: S249001_0000, S249002_0000 (The _0000 file sequence number is incremented when the file becomes larger than 5-20MB size you specify). Also make sure the Max Size (MB) is set to 5-20 MB; typically, this is set to 10MB. Check that Output Directories Primary path is `C:\Data\` 
+
+C.) NAV Tab: Select Ship Position and Ship Speed to come from the ADU5 (NMEA 2). Do not enable a backup (VmDas tends to get confused/overwhelmed with backup enabled). 
+
+{{:2adcp_settings_nav_tab.jpg|}}
+
+D.) Transform Tab: Select Heading Source to come from the ADU5 (HDT, NMEA 2). Select Tilt Source to come from the MRU (PRDID, NMEA 3). Again, do not enable a backup for the same reasons stated above.
+
+{{:3adcp_settings_transform_tab.jpg|}}
+
+E.) Data Screening Tab: If in bottom track mode, put a check mark in the bottom box labeled “Mark Data Bad Below Bottom”.  Otherwise, you do not need to change any settings on this page.
+
+8. Ideally, you should not have to change any of the settings on the other tabs. So, at this point you can click "OK" to exit the Data Options window.
+
+9. Click on the Blue "Play" Button in the upper left-hand corner under the File Tab. The ADCP will now start pinging (it is inaudible). When you do this, the ADCP and NMEA communications windows will pop up and confirm communication between the ADCP chassis, Nav GPS, ADU5 and MRU inputs - like this:
+
+{{:4adcp_press_play.jpg|}}
+
+This is usually the moment you have realized you forgot to turn ADCP on in the first place (so, just turn it on now and all is well). But, ultimately, what you are hoping to see is two green boxes in the bottom right hand corner of the VmDas screen stating: ENS Good and Nav Good (as shown in the screen shot above). If everything is well, then the ADCP and NMEA communication windows will close automatically. 
+
+
+The ADCP is now running, collecting data and recording data to several files.  You should see the yellow transmit light blink briefly every 3-9 seconds (RCS) or the XMIT, TXD, RXD lights blink (CC), and if viewing the raw data screen in VmDAS you should see new beam profiles show up every 4 seconds or so.  You do not need to control or otherwise influence the ADCP while it is running. Unlike the Chirp, there are no controls or settings.
+
+
+=== Data Displays ===
+
+During a typical SEA cruise, we will display the long term average (20 minutes) and record these magnitude and direction values in the hourly logbook. After successful completion of the above steps, you can then select the "L" (for long term display), "Ship track 1" (to plot the ship track along the vectors), and "Keep on Screen" to keep the ship track in your viewing window.
+
+VMDAS is easy to use and can provide a wealth of information in just a few screens. VMDAS, and its companion package, [[WinADCP]], use several different methods to display water current information over variable depth and time scales. Use the data output format that best suits your needs.
+
+VMDAS has three sets of screen layouts. These are:
+
+ ***Raw data:** The real time screen displays ping-by-ping updates of the ADCP data being collected. While not that useful for determining water currents, it can give you a very good idea of how the ADCP is behaving in different sea states and water depths. There is simply too much variability between pings to use single pings as a source of current information. 
+
+ ***Short-Term averaged data:** Short-term data is an average of ADCP pings, navigation input, and heading, pitch and roll data collected over a time period of five minutes. RDI calls this collection of water pings and bottom-tracking pings during a defined time interval an ensemble. 
+
+ ***Long-Term averaged data:** Long-term averaged data is similar to short-term averaged data, except that it is averaged for 20 minutes, instead of five.  DO NOT CHANGE THE LTA INTERVAL.  Adjust the STA interval if you want to vary your collection and averaging parameters.
+
+== Raw Data Display ==
+
+The Raw Data window displays ping-by-ping data updates. It is most useful when evaluating ADCP performance. This screen contains several different display windows.
+
+**Bottom Track information**
+
+This is useful in shallow water, but remember that the ADCP “ringing” means you do not get any useable data from approximately the top 40 meters of the water column. The bottom depth is displayed in the “Bottom Track” window, updated every ping. There is also information about the interaction of each of the four beams with the bottom.
+
+**Raw Velocity Window**
+
+The raw velocity window shows the current velocity measured by each of the four beams. Each beam measures the current coming from a different quadrant, in the direction of the transducer. Beams 1 and 3 point forward, beams 2 and 4 point aft, so when underway, beams 1 and 3 (red and blue) will generally show a positive raw velocity, while 2 and 4 (green and yellow) will show a negative raw velocity. You can set the depth range using the “Enlarge data vertically”, or “Shrink data vertically”, icons. These icons are enabled after selecting “Profile” in the radio buttons.
+
+**Raw Data Quality Window**
+
+The raw data quality window shows information about the signal being reflected from the water column to the ADCP transducer. Amplitude displays the strength of the reflected signal from a depth. Correlation displays how well the incoming signals match the outgoing signal. Percent good displays the percentage of pings from a given depth that meet the criteria for acceptable data. 
+
+**Tabular display**
+
+This display shows the raw data that is plotted in the above windows. There are several useful columns of data. The leftmost column, Bin, displays the bin number. The second column, Depth (m) displays the center depth of that bin. This is a good place for a quick check of bin depth. The "Pct Gd" columns show the percentage of good pings that meet the criteria for acceptable data. In the real time window, since this statistic is calculated for each individual beam for each ping, this number can only be 0% or 100%. 
+
+== Short Term Average Window ==
+
+The short-term average window displays ADCP and navigation data averaged over a five-minute interval. It will take at least five minutes for data to appear in this window after the ADCP begins to collect data. 
+
+**Nav bar**
+Displays the averaged navigation data for that five-minute ensemble. You will see ship speed and course, location, time and heading, roll and pitch data.
+
+**Short Average velocity and Short Average Data Quality windows**
+
+These windows are similar to those found in the raw data screen. The Short Average Velocity Window now displays current magnitude and direction through the water column. The top X-axis shows current velocity, the lower, current direction in degrees. Note that units are displayed at all times. The Short Average Data Quality window shows the average Amplitude, Correlation and Percent good for that five-minute ensemble. 
+
+**Ship Track 1 - NAV**
+
+Ship track window 1 displays the ship’s track using NAV input from the GPS as an Earth reference. The gray line represents the ship’s track. Current sticks represent the current, at three different depth bins. These vectors represent the magnitude and direction of the water at the three selected bins. Note that a scale is on the left side of the graph, and that the X and Y axes are Longitude and Latitude. Positions are updated every five minutes. The Toolbar, at the top of the figure, is useful for shifting the Ship track window over the cruise track. If the Toolbar is not present, right-click on the Ship Track window, and check Show Toolbar.  You can select the bins to be represented by the current sticks by going to Menu, Options, Edit Display Options, and selecting the Ship Track tab.
+
+
+**Ship Track 2 - Bottom Track** 
+
+Very similar to Ship Track 1, except that it uses Bottom Tracking as an Earth reference. This window will be blank in deep water where the ADCP cannot track the bottom. Note that the X and Y axes are distance in kilometers from an origin determined when the ADCP starts recording data during this session, not latitude and longitude. 
+
+== Long Term Average Window ==
+
+The long-term average window is very similar to the short-term average window, with the exception that it uses a time length of 20 minutes, instead of 5. Otherwise, the data displayed in the window, and the controls are the same. 
+
+### Shut Down ###
+
+1. Click on the blue Stop square.
+
+2. Turn off the ADCP, the white rocker switch on the ADCP system unit. Don’t forget.
+
+3 .Exit VMDAS.
+
+4. Exit Windows. 
+
+### File Types ###
+
+
+VMDAS records several different files, containing information from different sources and reflecting different processing steps. You can select from several of these file types when displaying data in WinADCP, the Windows based data display and analysis program. These files are written to the ADCP computer in `C:\Data\ADCP` and should be copied to the EHD under the ADCP folder daily using the Second Copy profile. Note that Second Copy can interrupt data collection by the ADCP by trying to copy open files, so you may have to copy files over manually.
+
+
+ *.ENR	Raw ADCP data file
+
+ *.STA	ADCP data plus navigation data averaged using the short time average period set in VMDAS configuration. This time period is five minutes. Short-term average files are best used for quick data checks.
+
+ *.LTA	ADCP data plus navigation data averaged using the long time average period set in VMDAS configuration (generally 20 minutes for SEA since our boats travel slowly; generally 5 minutes for faster motor powered R/Vs). LTA files should be used for determining ocean currents.
+
+ *.ENS	ADCP data after being screened for RSSI (amplitude) and correlation by VMDAS. 
+
+ *.ENX	ADCP single-ping data plus Nav data after having been bin-mapped, transformed to Earth coordinates, and screened for error velocity, vertical velocity and false targets. This data is ready for averaging.
+
+ *.N1R, .N2R	Raw NMEA data files from the GPS and motion sensor (MRU or Octans) respectively.
+
+ *.NMS	Binary format navigation data after screening and pre-averaging.
+
+ *.VMO	Option settings used for collecting the data.
+
+ *.VMP	Option settings for reprocessing the data.
+
+ *.LOG	ASCII file containing any errors found in NMEA, Ensemble output or ADCP communications.
+
+
+### Navigation Inputs ###
+
+The ADCP measures water currents relative to the transducer platform. In order to determine currents relative to the Earth, it is necessary to precisely locate the transducer and describe its motion, so that this motion can be subtracted from the raw data. On RCS, heading information is supplied by the gyrocompass and pitch and roll information is supplied from the MRU (Motion Reference Unit); on CC, the Octans FOG (fiber optic gyro) supplies both heading and motion data. The ADCP has two references for its geographic position, GPS and bottom tracking. Bottom tracking, where the ADCP measures its change in position from a point located on the bottom when data recording starts, can be used to a maximum depth of about 700 meters. In deeper water, the GPS input alone is used.
+
+The IxSEA Octans sends the RPH (roll, pitch, and heading) data to the ADCP.  The data stream can be read in the .N2R file.  If the Octans output format is set properly (RDI PRDID) you will see the following:
+
+
+This data can also be viewed as the navigation data stream on VmDas, but it combines GPS data (visible in .N1R files) so you will see an occasional $PRDID instead of, $PHTRO, $HEHDT, and $PHINF openers.  
+
+
+
+### ADCP Troubleshooting ###
+
+
+== Mouse Issues ==
+
+Occasionally, the ADCP computer will get confused about COM port inputs and think that the GPS is another mouse. This causes the cursor for the actual mouse to jump around the screen uncontrollably, which is frustrating and makes it impossible to click on anything. To remedy this, disconnect the GPS input from the Edgeport box (COM3 = GPS). Go to Control Panel- System - Hardware- Device Manager. Click on the "+" next to the "Mice and Other Pointer Devices" to expand the list. Click on the "Microsoft Serial Ball Point," select "Actions", then "Disable". Click OK.
+
+Reboot the computer with the GPS plugged back into COM port 3. This should stabilize the system and remedy the problem.
+
+== Electronic Manuals on board: ==
+
+Ocean Surveyor Users Guide-PN 95A-6013-00-Dec2002.pdf
+
+Ocean Surveyor Technical Manual-PN 95A-6001-00-June1998.pdf
+
+Ocean Surveyor Test Guide-PN 95A-6027-00-Dec2002.pdf
+
+Ocean Surveyor Troubleshooting Guide PN 95A-6021-00-Dec2002.pdf
+
+== Check these files ==
+ 
+.log   		They contain important information on interruption of data streams.
+
+.N1R 	  	They contain the GPS navigation data stream.
+
+.N2R 		They contain the roll/pitch/heading (RPH) data stream
+
+Second Copy can interrupt data collection by the ADCP.  These interruptions are evident in the .log as “error writing to raw data.”  They show up in the other two files as time jumps.  Compare the times to the log of automatic backups of ADCP data by Second Copy.
+    
+The format of Octans data must be consistent with the ADCP settings in order to properly take out ship motion.  Large vectors (1-4 m/sec) in the direction of ship motion are a good sign that the ADCP is not doing this properly.  Check the format of the Octans data stream in the .N2R file (lines may start with $PRDID (proprietary code) or $HEHDT (a standardized code)).  To change the Octans format, right click on the background of the repeater and go to Configuration and serial I/O (see Gyro (Octans) reset instructions for details).  Select an output from Port B that is consistent with the ADCP settings.  The ADCP setting can be viewed at Options, View Data Options and clicking on the Transfer tab.  Heading source should be NMEA/PRDID, but on C184 when PRDID had issues we used NMEA/HDT.
+
+If complete failure occurs, send a zipped file with a small sampling of data (as little as 3 pings) as an ensemble file (.ENR).  We can send this by e-mail from the ship to the office for quick diagnosis.  RDI can use this single file to create all of the file types they need to make a complete diagnosis. 
+  
+From S209: ADCP issue-stops xmittg. Log file reads:
+NMEA [Nav] serial buffer fill: storing 300 bytes without processing.
+Msg alternates w/ "NMEA[Nav] serial buffer level OK", then ultimately get "NMEA[RPH] communication timeout" repeatedly & occasionally NMEA[Nav] communication timeout" before stops xmittg.
+When the firewall was turned off on Labutil (ADCP computer still running Win2000), the problem did not reoccur.    
+ 	
+
+Working ADCP settings from RCS 14Sept05, CC 7Dec05.
+Note that old ADCP (original on RCS) used COM3 for NMEA nav data but new one uses COM2 (actually an Edgeport1 going into a USB port since Optiplex SX-280 has only one COM port and it is used for direct link to chassis.
+
+
+## ADU5 {-}
+
+### Introduction:
+
+### Operation:
+
+### Tricks of the Trade:
+
+If data is not seen on Real Time Monitor on Datalogger
+
+ADU5: Ok, I am pretty sure that you guys lost power at some point which means that the ADU5 has stopped sending data.  
+
+1-  In order to re-establish a data connection open Ashtech Evaluate on Datalogger.  This should open an automatic dialog box.  
+
+2-  Select "Connect to GPS Receiver with last settings" then OK.  This should try connecting to the ADU5.  If everything goes well it will scroll some dialog boxes like ADCP which then disappear once the connection is established.  
+
+3-  From the main menu select GPS>Terminal. This should open a window that has some line of $PASH info in green (I think).  
+
+4-  At the top of this new window is something that looks like a light switch on the top left and a pull down menu in the middle and a SEND button to the right .  Go to the pull down menu and select "turn on NMEA message" (or something like that) and then hit send.  This will bring up another dialog box that allows you to select the NMEA message you want to send.  You need to turn on three NMEA message: GGA ($GPGGA), VTG ($GPVTG) and HDT ($GPHDT) (so you will have to go though the process three times).  Click OK.  If successful you will see the ADU5 start sending messages to the terminal.  Each data sentence starts with its code, $GPGGA, $GPVTG etc. 
+
+5-  There is one other message that you need to turn on, $PASHR,AT2 under Raw Data Commands in the same pull down menu where you turned on the NMEA messages.  This is the message that has the roll and pitch for the ADCP.  
+
+6-  Once all the messages have been turned on you should see them scrolling in the terminal window.  You can move the light switch from left to right to pause the stream so you can check that all the messages have been turned on properly.  Once everything is turned on properly, close the Evaluate program and try starting up Datalogger. 
+
+Maintenance:
+
+Very Important:
+
+Use:
+
+Weekly:
+
+Bi-weekly:
+
+Turnarounds:
+
+Yards:
+Software:
+
+

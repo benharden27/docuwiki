@@ -1,0 +1,39 @@
+====== ADU5 ======
+
+Introduction:
+
+Operation:
+
+Tricks of the Trade:
+
+If data is not seen on Real Time Monitor on Datalogger
+
+ADU5: Ok, I am pretty sure that you guys lost power at some point which means that the ADU5 has stopped sending data.  
+
+1-  In order to re-establish a data connection open Ashtech Evaluate on Datalogger.  This should open an automatic dialog box.  
+
+2-  Select "Connect to GPS Receiver with last settings" then OK.  This should try connecting to the ADU5.  If everything goes well it will scroll some dialog boxes like ADCP which then disappear once the connection is established.  
+
+3-  From the main menu select GPS>Terminal. This should open a window that has some line of $PASH info in green (I think).  
+
+4-  At the top of this new window is something that looks like a light switch on the top left and a pull down menu in the middle and a SEND button to the right .  Go to the pull down menu and select "turn on NMEA message" (or something like that) and then hit send.  This will bring up another dialog box that allows you to select the NMEA message you want to send.  You need to turn on three NMEA message: GGA ($GPGGA), VTG ($GPVTG) and HDT ($GPHDT) (so you will have to go though the process three times).  Click OK.  If successful you will see the ADU5 start sending messages to the terminal.  Each data sentence starts with its code, $GPGGA, $GPVTG etc. 
+
+5-  There is one other message that you need to turn on, $PASHR,AT2 under Raw Data Commands in the same pull down menu where you turned on the NMEA messages.  This is the message that has the roll and pitch for the ADCP.  
+
+6-  Once all the messages have been turned on you should see them scrolling in the terminal window.  You can move the light switch from left to right to pause the stream so you can check that all the messages have been turned on properly.  Once everything is turned on properly, close the Evaluate program and try starting up Datalogger. 
+
+Maintenance:
+
+Very Important:
+
+Use:
+
+Weekly:
+
+Bi-weekly:
+
+Turnarounds:
+
+Yards:
+Software:
+
